@@ -1,12 +1,12 @@
 
-body{
+.body{
     display: flex;
     justify-content: center;
     background:rgb(147, 204, 204);
     font-family: 'Montserrat', sans-serif;
 }
 
-.cuerpo{
+.main{
     display: flex;
     gap: 2rem;
     padding: 20px;
@@ -156,9 +156,16 @@ textarea:focus {
     display: none;
 }
 
-.creador{
-    position: absolute;
-    top: 1em;
+footer{
+    display: inline-block;
+    width: 100%;
+}
+
+.logogit{
+    width: 25px;
+}
+
+#creador{
     color: black;
     font-weight: bold;
 }
