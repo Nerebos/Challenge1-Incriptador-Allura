@@ -185,11 +185,11 @@ footer{
 
 @media only screen and (min-width: 491px) and (max-width: 1000px) {
 
-    body{
+    .body{
         flex-direction: column;
     }
 
-    .cuerpo{
+    .main{
         display: block;
     }
 
@@ -265,7 +265,7 @@ footer{
 
 @media only screen and (max-width:490px) { /*Todos estos son parámetros en caso de que la pagina se abra desde un dispositivo mobil*/
 
-    .cuerpo{
+    .main{
         display: block;
     }
 
