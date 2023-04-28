@@ -159,6 +159,8 @@ textarea:focus {
 .creador{
     position: absolute;
     top: 1em;
+    color: black;
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 491px) and (max-width: 1000px) {
