@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="es"> <!--indica el lenguaje que estará manejando la página-->
+
+    <head> <!--defino la etiquetas informativas-->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> <!--permite exportar la pagina web a la vista de un dispositivo mobil-->
+        <title>Encriptador Alura</title> <!--Es el título de la página web-->
+        <link rel="stylesheet" href="style/reset.css"><!--siempre colocar un reset antes de cualquier otro style, para optimizarlo-->
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Aqui referenciamos un tipo de fuente de internet-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <!-- style, es el css que afecta como se verá nuestra pagina web con ciertos parámetros, 
+    para todas las etiquetas "p" --> <!-- para eso, crearemos otro archivo llamado style.css que contendra todos los estilos de nuestro código y lo llamamos con link -->
+    </head>
+
+    <body> 
+        <div class="body"><!--defino todas la etiquetas de contenido-->
+            <main class="main">        
+                <section class="caja">  
+                    <div class="imagen1">
+                        <img src="images/logo.png" class="imagen">
+                    </div>  
+                </section>
+                <section class="parte_1">
+                    <div>                    
+                        <script src="encriptador.js"></script> 
+                        <textarea type="text" class="cuadro_texto1" required placeholder="ingrese el texto aqui" id="texto"
+                        cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="botones">
+                        <p class="etiqueta">&#8505; por favor solo poner letras en minuscula, sin acentos y caracteres especiales</p>
+                        <button type = "button" onclick = encriptar_texto() class="encriptar">encriptar</button>
+                        <br class="hide_exc">
+                        <button type = "button" onclick = desencriptar_texto() class="desencriptar"> desencriptar</button>
+                    </div>   
+                </section>
+                <br class="hide_exc">
+                <br class="hide_exc">
+
+                <section class="texto_imagen">                
+                    <div class="imagen2_div hidden"id="imagen_incognito"> 
+                        <img src="images/descarga (2).png" class="imagen2" >
+                    </div>
+                    <div>
+                        <p class="mensaje_1">Ningún mensaje fue encontrado</p>
+                    </div>
+                    <div class="frase_encriptada hide">
+                        <label for="texto_final"></label> <textarea id = "texto_final" rows="4" cols="50" readonly></textarea>
+                    </div>
+                    <div class="botones2 hide">
+                        <button type = "button" onclick = copiar_texto() class="copiar">copiar</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div class="referencias">
+                <p id="creador">&#169; Este sitio web fue elaborado por Enrique Conde Parodi</p><a href="https://github.com/Nerebos"><img src="images/git.png" alt="" class="logogit"></a> 
+            </div>
+
+        </footer>
+
+            
+
+    </body>
+</html>
