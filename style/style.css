@@ -265,6 +265,14 @@ footer{
 
 @media only screen and (max-width:490px) { /*Todos estos son parámetros en caso de que la pagina se abra desde un dispositivo mobil*/
 
+    body{
+        background: rgb(147, 204, 204);
+    }
+
+    .body{
+        display: block;
+    }
+
     .main{
         display: block;
     }
